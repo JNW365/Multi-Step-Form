@@ -4,10 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Multi-Step Form</title>
 </head>
 <body>
+    <div class="container">
+        <div class="image-container">
+            <div class="text-container">
+                <h2>Book Your Tune Now!</h2>
+                <p>Keep your bike running smoothly with our expert tune-ups! Whether you're a daily commuter or a weekend trail rider, regular maintenance keeps your ride safe and enjoyable. Our friendly mobile bike repair service comes to you—saving you time and hassle. Book your tune-up today and get back on the road with confidence.</p>
+                <ul>
+                    <li>Convenient Mobile Service — We come to your home, office, or favorite trail, saving you time and hassle.</li>
+                    <li>Expert Repairs & Tune-Ups — Certified mechanics who treat your bike like their own.</li>
+                    <li>Fast, Reliable Appointments — Easy online booking with flexible scheduling to fit your day.</li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="form-container">
+            <img src="logo-transparent-png.png" alt="">
+            <header>
+                <div class="progress-container">
+                    <div class="progress" id="progress"></div>
+                        <div class="circle active">1</div>
+                        <div class="circle">2</div>
+                        <div class="circle">3</div>
+                        <div class="circle">4</div> 
+                    </div>
+            </header>
+            <form action="" class="form">
+                <!-- step 1 -->
+               <div class="form-step">
+                    <h2>Customer Information</h2>
+                    <input type="text" placeholder="name">
+                    <input type="text" placeholder="phone">
+                    <input type="text" placeholder="email">
+                </div> 
+                 <!-- step 2 -->
+                <div class="form-step">
+                    <h2>Location</h2>
+                    <input type="text" placeholder="address">
+                    <input type="text" placeholder="city">
+                </div>
+                  <!-- step 3 -->
+                <div class="form-step">
+                    <h2>Bicycle Details</h2>
+                    <input type="text" placeholder="brand">
+                    <input type="text" placeholder="model">
+                    <input type="text" placeholder="year">
+                </div>
+                <!-- step 4 -->
+                <div class="form-step">
+                    <h2>Service Type</h2>
+                    <input type="radio" id="one">
+                    <label for="one">Type One</label><br>
+                    <input type="radio" id="two">
+                    <label for="two">Type Two</label><br>
+                    <input type="radio" id="three">
+                    <label for="three">Type Three</label><br>
+                </div>
+            </form>
+            <div class="button-container">
+                <button id="prev">Prev</button>
+                <button id="next">Next</button>
+            </div>
+            
+        </div>
+    </div>
 <script src="script.js"></script>   
 </body>
 </html>
