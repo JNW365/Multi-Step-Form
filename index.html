@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- styles -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">    
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -47,10 +48,18 @@
                 </div>
                  <!-- step 2 -->
                 <div class="form-step">
-                    <h2>Location</h2>
-                    <input type="text" placeholder="address">
-                    <input type="text" placeholder="city">
-                    <h3>Appointment Date & Time</h3>
+                    <div class="location">
+                        <h3>Location</h3>
+                        <input type="text" placeholder="address">
+                        <input type="text" placeholder="city">
+                    </div>
+                    
+                    <div class="date-time">
+                        <h3>Appointment Date & Time</h3>
+                        <input type="text" id="appointment-date" placeholder="Select a date">
+                        <input type="text" id="appointment-time" placeholder="Select a time">
+                    </div>
+                    <img src="anton-savinov-CL7shAl6888-unsplash.jpg" alt="">
                 </div>
                   <!-- step 3 -->
                 <div class="form-step">
@@ -94,6 +103,26 @@
                         </ul>
                     </div>   
                 </div>
+                <!-- confirmation -->
+                <div class="form-step">
+                    <h2>Appointment Summary</h2>
+                    <div class="confirmation">
+                        <h3>Customer Information</h3>
+                        <p>Name:</p>
+                        <p>Phone:</p>
+                        <p>Email:</p>
+                        <h3>Location</h3>
+                        <p>Address:</p>
+                        <p>City:</p>
+                        <h3>Bicycle Details</h3>
+                        <p>Brand:</p>
+                        <p>Model:</p>
+                        <p>Year:</p>
+                        <h3>Service Level</h3>
+                        <p>Package:</p>
+                    </div>
+                    
+                </div>
             </form>
             <div class="button-container">
                 <button id="prev"><i class="fa-solid fa-arrow-left"></i>Prev</button>
@@ -102,6 +131,7 @@
             
         </div>
     </div>
-<script src="script.js"></script>   
+<script src="script.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>   
 </body>
 </html>

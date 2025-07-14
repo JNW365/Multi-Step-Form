@@ -29,3 +29,25 @@ showStep(currentStep);
 // Event Listeners
 previous.addEventListener('click', prevStep);
 next.addEventListener('click', nextStep);
+
+// Flatpickr
+// date
+document.addEventListener('DOMContentLoaded', function () {
+  flatpickr("#appointment-date", {
+    altInput: true,
+    altFormat: "F j, Y",
+    dateFormat: "Y-m-d",
+    minDate: "today"
+  });
+});
+// time
+document.addEventListener('DOMContentLoaded', function() {
+  flatpickr("#appointment-time", {
+    enableTime: true,
+    noCalendar: true,
+    dateFormat: "h:i K",
+    time_24hr: false // set to true for 24hr time
+  });
+});
+
+// Form summary/confirmation
