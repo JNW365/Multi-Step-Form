@@ -41,17 +41,17 @@
                 <!-- step 1 -->
                <div class="form-step">
                     <h2>Customer Information</h2>
-                    <input type="text" placeholder="name">
-                    <input type="text" placeholder="phone">
-                    <input type="text" placeholder="email">
+                    <input type="text" placeholder="name" id="name-input">
+                    <input type="text" placeholder="phone" id="phone-input">
+                    <input type="text" placeholder="email" id="email-input">
                     <img src="anton-savinov-PfWzxTA-uV8-unsplash.jpg" alt="">
                 </div>
                  <!-- step 2 -->
                 <div class="form-step">
                     <div class="location">
                         <h3>Location</h3>
-                        <input type="text" placeholder="address">
-                        <input type="text" placeholder="city">
+                        <input type="text" placeholder="address" id="address-input">
+                        <input type="text" placeholder="city" id="city-input">
                     </div>
                     
                     <div class="date-time">
@@ -64,16 +64,16 @@
                   <!-- step 3 -->
                 <div class="form-step">
                     <h2>Bicycle Details</h2>
-                    <input type="text" placeholder="brand">
-                    <input type="text" placeholder="model">
-                    <input type="text" placeholder="year">
+                    <input type="text" placeholder="brand" id="brand-input">
+                    <input type="text" placeholder="model" id="model-input">
+                    <input type="text" placeholder="year" id="year-input">
                     <img src="anton-savinov--cxC8iFx6V4-unsplash.jpg" alt="">
                 </div>
                 <!-- step 4 -->
                 <div class="form-step">
                     <h2>Service Type</h2>
                     <div class="service-type">
-                        <input type="radio" id="one">
+                        <input type="radio" name="service" id="one" value="Gold Tune-Up (Premium Service)">
                         <label for="one">$129- Gold Tune-Up (Premium Service)</label><br>
                         <ul>
                           <li>Complete bike inspection & off-bike drivetrain cleaning</li>
@@ -83,7 +83,7 @@
                         </ul>
                     </div>
                     <div class="service-type">
-                        <input type="radio" id="two">
+                        <input type="radio" name="service" id="two" value="Silver Tune-Up">
                         <label for="two">$89- Silver Tune-Up</label><br>
                         <ul>
                           <li>Full safety check & on-bike drivetrain cleaning</li>
@@ -93,7 +93,7 @@
                         </ul>
                     </div>
                     <div class="service-type">
-                        <input type="radio" id="three">
+                        <input type="radio" name="service" id="three" value="Bronze Tune-Up">
                         <label for="three">$59- Bronze Tune-Up</label><br>
                         <ul>
                           <li>Basic safety inspection</li>
@@ -108,18 +108,21 @@
                     <h2>Appointment Summary</h2>
                     <div class="confirmation">
                         <h3>Customer Information</h3>
-                        <p>Name:</p>
-                        <p>Phone:</p>
-                        <p>Email:</p>
+                        <p>Name:</p> <span id="name"></span><br>
+                        <p>Phone:</p><span id="phone"></span><br>
+                        <p>Email:</p><span id="email"></span><br>
                         <h3>Location</h3>
-                        <p>Address:</p>
-                        <p>City:</p>
+                        <p>Address:</p><span id="address"></span>
+                        <p>City:</p><span id="city"></span><br>
+                        <h3>Date/Time</h3>
+                        <p>Date:</p><span id="date"></span>
+                        <p>Time:</p><span id="time"></span>
                         <h3>Bicycle Details</h3>
-                        <p>Brand:</p>
-                        <p>Model:</p>
-                        <p>Year:</p>
+                        <p>Brand:</p><span id="brand"></span><br>
+                        <p>Model:</p><span id="model"></span><br>
+                        <p>Year:</p><span id="year"></span><br>
                         <h3>Service Level</h3>
-                        <p>Package:</p>
+                        <p>Package:</p><span id="service-type"></span><br>
                     </div>
                     
                 </div>

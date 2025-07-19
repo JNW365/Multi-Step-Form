@@ -136,6 +136,12 @@ input[type="radio"] {
 }
 .confirmation h3 {
     margin: .5rem 0;
+    text-decoration: underline;
+}
+.confirmation p {
+    display: inline-block;
+    margin: .25rem 1rem;
+    font-weight: 600;
 }
 
 
