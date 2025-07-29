@@ -20,7 +20,7 @@ body {
     height: 95vh;
     width: 70vw;
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 1.25fr 1fr;
     outline: 2px solid black;
     overflow: hidden;
     border-radius: 5px;
@@ -72,6 +72,7 @@ body {
 .form-step img {
     margin-top: 2rem;
 }
+
 /* service type styles */
 .service-type {
     align-self: flex-start;
@@ -118,6 +119,11 @@ input[type="radio"] {
 .button-container button:hover {
     background-color: #3393d1; 
 }
+
+.date-time input {
+    margin: .5rem auto;
+}
+
 /* step-4 styles */
 .service-type {
     outline: 1px solid black;
@@ -132,7 +138,7 @@ input[type="radio"] {
 }
 /* summary styles */
 .confirmation {
-    margin-top: 2rem;
+    margin-top: 0;
 }
 .confirmation h3 {
     margin: .5rem 0;
