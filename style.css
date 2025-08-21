@@ -16,62 +16,61 @@ body {
     align-items: center;
 }
 /* container styles */
-.container {
-    height: 95vh;
-    width: 70vw;
-    display: grid;
-    grid-template-columns: 1.25fr 1fr;
-    outline: 2px solid black;
-    overflow: hidden;
-    border-radius: 5px;
-}
-/* image container styles */
-.image-container {
-    background-image: url("anton-savinov-DQElz49OlMg-unsplash.jpg");
-    background-position: center;
-    background-size: cover;
-    color: white;
+
+header {
+    margin: 1rem;
+    outline: 1px solid red;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    height: auto;
+    margin-bottom: .25rem;
 }
-.text-container {
-    background-color: rgba(0,112,186,0.75);
-    padding: 2rem 1rem;
-    margin: 0 1rem;
-    border-radius: 5px;    
-}
-.text-container h1 {
-    margin-bottom: 1.5rem;
-}
-.text-container ul {
-    padding: 1rem;
-}
-.text-container li {
-    margin-bottom: 1rem;
-}
+
 /* form-container styles */
 .form-container {
+    outline: 1px solid blue;
+    height: 95vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;   
+    justify-content: space-between;
+    position: relative;
+    margin: 0 1rem;
+}
+#logo {
+    width: 25%;
+    height: auto; 
 }
 .form {
+    outline: 3px solid green;
+    margin-bottom: 1rem;
     height: 90%;
-    padding: 1rem;
+    padding: .25rem; 
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;  
 }
 .form-step {
+    outline: 1px solid orange;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    height: 90%;
 }
-.form-step img {
-    margin-top: 2rem;
+.appointment-details {
+  /* outline: 1px solid dodgerblue; */
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+  padding: .25rem; 
 }
+.date-time input {
+    width: 100%;
+}
+
 
 /* service type styles */
 .service-type {
@@ -79,10 +78,7 @@ body {
     width: 100%;
     border-radius: 5px;
 }
-.form-container img {
-    width: 75%;
-    height: auto;
-}
+
 .d-none {
   display: none;
 }
@@ -99,9 +95,11 @@ input[type="radio"] {
 }
 .button-container {
     width: 90%;
-    margin-bottom: 1rem;
     display: flex;
     justify-content: space-around;
+    outline: 1px solid red;
+    margin-bottom: .5rem;
+    
 }
 .button-container button {
     width: 25%;
@@ -123,12 +121,43 @@ input[type="radio"] {
 .date-time input {
     margin: .5rem auto;
 }
+/* individual step styles */
+/* step-1 styles */
+.step-1 h2 {
+    margin-bottom: 2rem;
+}
+.step-1 input {
+    margin-bottom: 1rem;
+}
+/* step-2 styles */
+
+.step-2 h3 {
+    margin-bottom: 2rem;
+}
+.step-2 input {
+    margin-bottom: 1rem;
+}
+.appointment-details .location {
+    margin-bottom: 4rem;
+
+}
+/* step-3 */
+.step-3 h2 {
+    margin-bottom: 2rem;
+}
+.step-3 input {
+    margin-bottom: 1rem;
+}
+
 
 /* step-4 styles */
+.step-service h2 {
+    margin-bottom: 2rem;
+}
 .service-type {
     outline: 1px solid black;
     padding: .5rem 1rem;
-    margin: .5rem 0;
+    margin: .25rem 0;
 }
 .service-type label {
     font-weight: 700;
@@ -137,17 +166,29 @@ input[type="radio"] {
     padding: .5rem;
 }
 /* summary styles */
+.step-confirm h2 {
+    margin-bottom: 2rem;
+}
 .confirmation {
     margin-top: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
 }
 .confirmation h3 {
-    margin: .5rem 0;
+    margin-bottom: 1rem ;
     text-decoration: underline;
 }
 .confirmation p {
     display: inline-block;
-    margin: .25rem 1rem;
+    margin: .15rem 1rem;
     font-weight: 600;
+}
+.service-level {
+    grid-column: span 2;
+}
+.location-confirm h3 {
+    margin-bottom: 2rem;
 }
 
 
@@ -197,4 +238,12 @@ input[type="radio"] {
 }
 .circle.active {
   border-color: var(--line-border-fill);
+}
+
+/* Media Queries */
+@media (min-width: 992px) {
+    .form-container {
+       width: 25vw;
+    }
+    
 }

@@ -13,22 +13,10 @@
     <title>Multi-Step Form</title>
 </head>
 <body>
-    <div class="container">
-        <div class="image-container">
-            <div class="text-container">
-                <h1>Book Your Tune Now!</h1>
-                <p>Keep your bike running smoothly with our expert tune-ups! Whether you're a daily commuter or a weekend trail rider, regular maintenance keeps your ride safe and enjoyable. Our friendly mobile bike repair service comes to you—saving you time and hassle. Book your tune-up today and get back on the road with confidence.</p>
-                <ul>
-                    <li>Convenient Mobile Service — We come to your home, office, or favorite trail, saving you time and hassle.</li>
-                    <li>Expert Repairs & Tune-Ups — Certified mechanics who treat your bike like their own.</li>
-                    <li>Fast, Reliable Appointments — Easy online booking with flexible scheduling to fit your day.</li>
-                </ul>
-            </div>
-            
-        </div>
-        <div class="form-container">
-            <img src="logo-transparent-png.png" alt="" id="logo">
+        <div class="form-container"> 
             <header>
+                <img src="logo-transparent-png.png" alt="" id="logo">
+                <h1>Appointment Booking</h1>
                 <div class="progress-container">
                     <div class="progress" id="progress"></div>
                         <div class="circle active">1</div>
@@ -39,38 +27,37 @@
             </header>
             <form action="" class="form">
                 <!-- step 1 -->
-               <div class="form-step">
+               <div class="form-step step-1">
                     <h2>Customer Information</h2>
                     <input type="text" placeholder="name" id="name-input">
                     <input type="text" placeholder="phone" id="phone-input">
                     <input type="text" placeholder="email" id="email-input">
-                    <img src="anton-savinov-PfWzxTA-uV8-unsplash.jpg" alt="">
                 </div>
                  <!-- step 2 -->
-                <div class="form-step">
-                    <div class="location">
-                        <h3>Location</h3>
-                        <input type="text" placeholder="address" id="address-input">
-                        <input type="text" placeholder="city" id="city-input">
+                <div class="form-step step-2">
+                    <div class="appointment-details">
+                        <div class="location">
+                            <h3>Location</h3>
+                            <input type="text" placeholder="address" id="address-input">
+                            <input type="text" placeholder="city" id="city-input">
+                        </div>
+                        <div class="date-time">
+                            <h3>Appointment Date & Time</h3>
+                            <input type="text" id="appointment-date" placeholder="Select a date">
+                            <input type="text" id="appointment-time" placeholder="Select a time">
+                        </div>
                     </div>
                     
-                    <div class="date-time">
-                        <h3>Appointment Date & Time</h3>
-                        <input type="text" id="appointment-date" placeholder="Select a date">
-                        <input type="text" id="appointment-time" placeholder="Select a time">
-                    </div>
-                    <img src="anton-savinov-CL7shAl6888-unsplash.jpg" alt="">
                 </div>
                   <!-- step 3 -->
-                <div class="form-step">
+                <div class="form-step step-3">
                     <h2>Bicycle Details</h2>
                     <input type="text" placeholder="brand" id="brand-input">
                     <input type="text" placeholder="model" id="model-input">
                     <input type="text" placeholder="year" id="year-input">
-                    <img src="anton-savinov--cxC8iFx6V4-unsplash.jpg" alt="">
                 </div>
                 <!-- step 4 -->
-                <div class="form-step">
+                <div class="form-step step-service">
                     <h2>Service Type</h2>
                     <div class="service-type">
                         <input type="radio" name="service" id="one" value="Gold Tune-Up (Premium Service)">
@@ -79,7 +66,6 @@
                           <li>Complete bike inspection & off-bike drivetrain cleaning</li>
                           <li>Precision gear & brake adjustment + wheel truing</li>
                           <li>Lubrication of chain, cables, and pivots</li>
-                          <li>Includes test ride and priority scheduling</li>  
                         </ul>
                     </div>
                     <div class="service-type">
@@ -89,7 +75,6 @@
                           <li>Full safety check & on-bike drivetrain cleaning</li>
                           <li>Gear and brake adjustment</li>
                           <li>Lubrication of chain and derailleurs</li>
-                          <li>Frame wipe-down and tire inflation</li>  
                         </ul>
                     </div>
                     <div class="service-type">
@@ -98,42 +83,49 @@
                         <ul>
                           <li>Basic safety inspection</li>
                           <li>Brake and gear check</li>
-                          <li>Chain lubrication</li>
-                          <li>Tire pressure check & minor tweaks</li>  
+                          <li>Chain lubrication</li> 
                         </ul>
                     </div>   
                 </div>
                 <!-- confirmation -->
-                <div class="form-step">
+                <div class="form-step step-confirm">
                     <h2>Appointment Summary</h2>
                     <div class="confirmation">
-                        <h3>Customer Information</h3>
-                        <p>Name:</p> <span id="name"></span><br>
-                        <p>Phone:</p><span id="phone"></span><br>
-                        <p>Email:</p><span id="email"></span><br>
-                        <h3>Location</h3>
-                        <p>Address:</p><span id="address"></span>
-                        <p>City:</p><span id="city"></span><br>
-                        <h3>Date/Time</h3>
-                        <p>Date:</p><span id="date"></span>
-                        <p>Time:</p><span id="time"></span>
-                        <h3>Bicycle Details</h3>
-                        <p>Brand:</p><span id="brand"></span><br>
-                        <p>Model:</p><span id="model"></span><br>
-                        <p>Year:</p><span id="year"></span><br>
-                        <h3>Service Level</h3>
-                        <p>Package:</p><span id="service-type"></span><br>
+                        <div class="customer-info">
+                           <h3>Customer Information</h3>
+                            <p>Name:</p> <span id="name"></span><br>
+                            <p>Phone:</p><span id="phone"></span><br>
+                            <p>Email:</p><span id="email"></span><br> 
+                        </div>
+                        <div class="location-confirm">
+                            <h3>Location</h3>
+                            <p>Address:</p><span id="address"></span><br>
+                            <p>City:</p><span id="city"></span><br>
+                        </div>
+                        <div class="date-time">
+                            <h3>Date/Time</h3>
+                            <p>Date:</p><span id="date"></span><br>
+                            <p>Time:</p><span id="time"></span>
+                        </div>
+                        <div class="bicycle-details">
+                            <h3>Bicycle Details</h3>
+                            <p>Brand:</p><span id="brand"></span><br>
+                            <p>Model:</p><span id="model"></span><br>
+                            <p>Year:</p><span id="year"></span><br>
+                        </div>
+                        <div class="service-level">
+                           <h3>Service Level</h3>
+                            <p>Package:</p><span id="service-type"></span><br> 
+                        </div>    
                     </div>
-                    
-                </div>
+                </div> 
             </form>
             <div class="button-container">
                 <button id="prev"><i class="fa-solid fa-arrow-left"></i>Prev</button>
                 <button id="next">Next<i class="fa-solid fa-arrow-right"></i></button>
-            </div>
-            
+            </div>   
         </div>
-    </div>
+   
 <script src="script.js"></script>
  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>   
 </body>
